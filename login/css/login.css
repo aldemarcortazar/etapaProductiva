@@ -1,0 +1,91 @@
+/**los estilos generales ****/
+
+:root{
+    --main-font:sans-serif;
+    --font-size:16px;
+    --primary-color:#fc7323;
+    --color:#ffffff ;
+    --alpha-color:#000000;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: var(--main-font);
+    font-family: var(--main-font);
+}
+body{
+    margin: 0;
+    overflow-x: hidden;
+}
+.main{
+    display: flex;
+    flex-direction:row ;
+    justify-content: flex-end;
+}
+.img_t_e{
+    position: absolute;
+    top: 0;
+    left: 0%;
+    bottom: 0;
+    right: 0%;
+    margin: 0;
+}
+.img_t_e img{
+    width: 50%;
+    height: 100%;
+}
+form{
+    width: 30%;
+    z-index: 1000;
+    flex-grow: 1;
+    margin: 0;
+    padding: 0;
+    position:absolute;
+    top:0;
+    left: 55%;
+}
+.logoF{
+    width: 60%;
+    margin: 3vh 0 0 5vw;
+    padding: 0;
+}
+.logoF img{
+    width: 90%;
+    margin: 0;
+    padding: 0;
+}
+form h1{
+    letter-spacing: 1px;
+    text-align: center;
+}
+form input{
+    width:88%;
+    height: 3rem;
+    display: block;
+    margin: 2vh 0 0 0;
+    border-radius: 10px;
+    padding: 0vw 2vw;
+}
+form a{
+    float:right;
+    margin: 3vh 0;
+    color:var(--alpha-color);
+    text-decoration: none;
+}
+form a:hover{
+    transform: scale(1.5);
+}
+form input[type="submit"]{
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    background-color: #fc7323;
+    font-size: var(--font-size);
+    color: var(--color);
+    cursor: pointer;
+    height: 2rem;
+}
+form input[type="submit"]:hover{
+    background-color: rgba(252, 115, 35, .5);
+}
+

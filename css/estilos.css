@@ -1,0 +1,79 @@
+
+
+/*******reset css***/
+
+:root{
+    --main-font:sans-serif;
+    --font-size:16px;
+    --primary-color:#fc7323;
+    --second-color:#238276;
+    --three-color:#596548;
+    --second--modal-color:rgba(34,34,34,0.85);
+}
+html{
+    box-sizing: border-box;
+    font-family: var(--main-font);
+    font-size: var(--font-size);
+}
+body{
+    margin: 0;
+    overflow-x: hidden;
+}
+.logo{
+    width: 4rem;
+}
+.logo img{
+    width: 100%;
+}
+.panel-buton{
+    cursor: pointer;
+    position: fixed;
+    z-index:999 ;
+    bottom: 2vh;
+    right: 2vw;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+    font-size: 3rem;
+}
+.panel{
+    background-color: var(--second-color);
+    position: fixed;
+    z-index: 998;
+    left: 0%;
+    top: 0;
+    right: 50%;
+    bottom: 0;
+    transform: translateX(-110%);
+    transition: all .5s ease;
+}
+
+.menu{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; /*da un espaciado entre los elementos como a las orillas*/
+    align-items: center;
+    text-align: center;
+}
+.menu a{
+    display: block;
+    padding: 2rem;
+    width: 91%;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #000000;
+    flex-wrap: nowrap;
+}
+.menu a:hover{
+    font-weight: bold;
+    background-color: #fc7323;
+    color: #000000;
+}
+.activo{
+    transform: translate(0% , 0);
+}
